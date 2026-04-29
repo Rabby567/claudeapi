@@ -1,0 +1,33 @@
+/* Tailwind v3 directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+/* Base resets */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #020617;
+    color: #f1f5f9;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: #6366f1;
+    color: white;
+  }
+
+  ::-webkit-scrollbar        { width: 5px; }
+  ::-webkit-scrollbar-track  { background: #0f172a; }
+  ::-webkit-scrollbar-thumb  { background: #334155; border-radius: 99px; }
+  ::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+}
